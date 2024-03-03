@@ -5,11 +5,34 @@ import { SocialIcons } from '../Header/HeaderStyles';
 import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
 
 const Footer = () => {
-  return (
-    <div>
-      Footer
-    </div>
-  );
+    return (
+        <FooterWrapper>
+            <LinkList>
+                <LinkColumn>
+                    <LinkTitle>Email</LinkTitle>
+                    <LinkItem href="telonasport99@gmail.com">
+                        contact@jsmastery.com
+                    </LinkItem>
+                </LinkColumn>
+            </LinkList>
+            <SocialIconsContainer>
+                <CompanyContainer>
+                    <Slogan>I’m willing to accept your offer</Slogan>
+                </CompanyContainer>
+                <SocialContainer>
+                    <SocialIcons href="https://google.com">
+                        <AiFillGithub size="3rem" />
+                    </SocialIcons>
+                    <SocialIcons href="https://google.com">
+                        <AiFillLinkedin size="3rem" />
+                    </SocialIcons>
+                    <SocialIcons href="https://google.com">
+                        <AiFillInstagram size="3rem" />
+                    </SocialIcons>
+                </SocialContainer>
+            </SocialIconsContainer>
+        </FooterWrapper>
+    );
 };
 
 export default Footer;
